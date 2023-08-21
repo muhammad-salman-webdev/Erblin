@@ -1,18 +1,9 @@
 .main-content-container {
   width: 1575px;
-  height: 985px;
+  height: 960px;
   flex-shrink: 0;
   border-radius: 38px 0px 0px 0px;
   background-color: #f9f9f9;
-}
-
-.tickets-dropdown-disabled {
-  color: #d3d3d3;
-  font-family: Product Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .category-title {
@@ -30,9 +21,7 @@
   flex-shrink: 0;
   border-radius: 20px;
   background-color: #fff;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-right: 30px;
+  padding: 30px;
 
   /* Dark Shadow 02 */
   box-shadow: 0px 16px 31px 0px rgba(0, 0, 0, 0.01);
@@ -40,11 +29,12 @@
 
 .details-container {
   display: flex;
-  width: 1495.33px;
+  width: 1434.33px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
+  height: 174;
 }
 
 .category-content-title {
@@ -54,15 +44,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding-left: 30px;
 }
 
 .information-containers {
   display: flex;
-  justify-content: space-between;
-  width: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
+  justify-content: space-around;
+  width: 1434px;
 }
 
 .details-text {
@@ -96,7 +83,7 @@
 
 .first-and-last-name:focus {
   border-radius: 10px;
-  border: 1px solid;
+  border: 5px solid;
   border-color: #2260ff;
   background: #f4f7ff;
 
@@ -135,45 +122,36 @@
 }
 
 .dropdown-options {
-  display: flex;
+  display: none;
   position: absolute;
 
   overflow: auto;
   width: 458.33px;
   height: 60px;
   flex-shrink: 0;
-  color: #d3d3d3;
-  font-family: Product Sans Medium;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border-radius: 10px;
-  border: 1px solid #d3d3d3;
-  background: #f8f8f8;
-  outline: 0;
-  padding-left: 30px;
-}
-
-.dropdown-options:focus {
-  border-radius: 10px;
-  border: 1px solid;
-  border-color: #2260ff;
-  background: #f4f7ff;
-
   color: var(--black-01, #1f1f1f);
   font-family: Product Sans Medium;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.dropdown-options a {
-  color: red;
-}
-
-
+.dropdown:hover .dropdown-options {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    width: 458.33px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--blue-01, #2260ff);
+    background: #f4f7ff;
+  }
 
 .arrow-down {
   width: 8.75px;
@@ -185,93 +163,4 @@
   margin-top: 26px;
   margin-right: 30.8px;
   margin-bottom: 25.3px;
-}
-
-.message-text {
-  color: var(--black-02, #6a7488);
-  font-family: Product Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  padding-top: 60px;
-  padding-left: 30px;
-}
-
-.type-message {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: -20px;
-  width: 1380px;
-  height: 274px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 0.5px solid #d3d3d3;
-  background: #f9f9f9;
-
-}
-
-.type-message::placeholder {
-  color: #d3d3d3;
-  font-family: Product Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  padding-left: 20px;
-
-}
-
-
-
-.submit-buttons {
-  display: flex;
-  width: 26px;
-  height: 237px;
-  position: relative;
-  padding-left: 30px;
-  gap: 20px;
-  align-items: center;
-  padding-bottom: 70px;
-}
-
-.submit-button {
-  display: flex;
-  padding: 13px 33px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 50px;
-  background: var(--blue-01, #2260ff);
-  color: var(--white-01, #fff);
-  text-align: center;
-  font-family: Product Sans Medium;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  height: 48px;
-  width: 124px;
-}
-
-.cancel-button {
-  display: flex;
-  padding: 13px 33px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 50px;
-  border: 1px solid #e2474b;
-  background: var(--white-01, #fff);
-  color: #e2474b;
-  text-align: center;
-  font-family: Product Sans Medium;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  height: 48px;
-  width: 124px;
 }
